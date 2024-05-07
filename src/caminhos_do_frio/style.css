@@ -1,0 +1,30 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fdefd3;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-top: 15%; 
+}
+
+.images img {
+    max-width: 70%;
+    height: auto; 
+    width: 180%;
+    margin-bottom: 0%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+.images {
+    flex: 1; 
+}
