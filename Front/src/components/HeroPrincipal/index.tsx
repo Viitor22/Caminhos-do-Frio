@@ -1,4 +1,3 @@
-import React from "react";
 import { HeroContainer, SpanTitulo } from "./index"
 import {Titulo} from "../../style/index"
 import hero from "../../assets/hero.jpg"

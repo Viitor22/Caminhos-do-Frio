@@ -1,14 +1,20 @@
-import React from "react";
-import {Links} from "../style/"
-import {cardContainer} from '.'
+import {Links} from "../../style/index.ts"
+import {CardContainer} from "./index.ts"
 
-const cardCidade = () => {
+type Props = {
+    nomeCidade: string
+    fotoCidade: string
+}
+
+const CardCidade = ({nomeCidade,fotoCidade}: Props) => {
     return (
-        <cardContainer>
-            <img src="../../assests/hero.jpg" alt="" />
-            <Links>Conheça </Links>
-        </cardContainer> 
+        <>
+        <CardContainer>
+            <img src={fotoCidade} alt="" />
+            <span><Links>Conheça {nomeCidade}</Links></span>
+        </CardContainer>
+        </> 
     );
 }
 
-export default cardCidade;
+export default CardCidade;

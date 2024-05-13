@@ -1,4 +1,3 @@
-import React from 'react';
 import {LogoDiv} from './index.ts';
 import logo from '../../assets/logo.jpg'
 

@@ -18,16 +18,22 @@ export const Titulo = styled.h1`
     color: #000;
 `
 export const Texto = styled.p`
-    font-weight: 700;
-    font-style: italic;
     color: rgb(0, 0, 0);
     text-decoration: none;
+    margin-bottom: 20px;
 `
 export const Links = styled.a`
     font-size: 22px;
     font-weight: 400;
     color: rgb(0, 0, 0);
     text-decoration: underline;
+    cursor: pointer;
+`
+export const TextoCidade = styled.p`
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(130, 71, 49);
+    text-decoration: none;
 `
 
 export default GlobalCss
