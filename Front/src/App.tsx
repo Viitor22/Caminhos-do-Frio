@@ -4,12 +4,14 @@ import SectionBananeiras from "./components/SectionBananeiras/index.tsx"
 import SectionMapa from "./components/SectionMapa/index.tsx"
 import TemplateCidade from './components/TemplateCidade/index.tsx'
 import areiacidade from './assets/areiacidade.jpg'
+import Header from "./components/Header/index.tsx"
 
 function App() {
 
   return (
     <>
       <GlobalCss></GlobalCss>
+      <Header></Header>
       <HeroPrincipal></HeroPrincipal>
       <SectionBananeiras></SectionBananeiras>
       <SectionMapa></SectionMapa>

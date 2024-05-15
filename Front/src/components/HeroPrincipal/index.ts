@@ -11,7 +11,7 @@ export const SpanTitulo = styled.span`
     z-index: 1;
     left: 30%;
     right: 30%;
-    margin-top: 75vh;
+    margin-top: 60vh;
     background-color: rgb(191, 137, 73);
     justify-content: center;
     display: flex;

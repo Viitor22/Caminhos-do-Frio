@@ -6,7 +6,6 @@ import Logo from "../Logo/index.tsx";
 const HeroPrincipal = () => {
     return (
         <HeroContainer  style={{backgroundImage: `url(${hero})`}} >
-            <Logo></Logo>
             <SpanTitulo><Titulo>Uma rota pensada para você.</Titulo></SpanTitulo>
         </HeroContainer>
     );

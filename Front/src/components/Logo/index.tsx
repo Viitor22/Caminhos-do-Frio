@@ -4,9 +4,9 @@ import logo from '../../assets/logo.jpg'
 
 const Logo = () => {
     return (
-            <LogoDiv>
-                <img src={logo} alt="Caminhos do Frio Logo" />
-            </LogoDiv>
+        <LogoDiv>
+            <img src={logo} alt="Caminhos do Frio Logo" />
+        </LogoDiv>
     )
 }
 

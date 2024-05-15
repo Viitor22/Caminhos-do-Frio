@@ -1,6 +1,13 @@
 'use client'
 import styled, {createGlobalStyle} from "styled-components"
 
+export const cores = {
+    principal: '#ca9738',
+    branco: ' #f7eeda',
+    secundario: '#f0cf9b',
+    preto: '#0a0300'
+}
+
 const GlobalCss = createGlobalStyle`
     *{
         margin: 0;
