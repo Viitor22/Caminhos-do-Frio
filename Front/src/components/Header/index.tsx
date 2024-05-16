@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState,  } from "react";
+import { useNavigate } from "react-router-dom"
 import { BarraPesquisa, HeaderButton, HeaderLogo, HeaderNav, Link, SearchButton } from "./style"
 import logo from '../../assets/logo.jpg'
 import { cores } from "../../style";
@@ -7,8 +8,14 @@ import { cores } from "../../style";
 const Header = () => {
     const [BotaoPesquisaAtivo, setBotaoPesquisaAtivo] = useState(false);
 
+    const navigate = useNavigate();
+    const rotaLogin = () => {
+        navigate('/login')
+    }
+
     return(
     <HeaderNav>
+        <div>
         <SearchButton onClick={() => setBotaoPesquisaAtivo(!BotaoPesquisaAtivo)}>
             <i style={{
                 backgroundColor: BotaoPesquisaAtivo ? cores.branco :'',
@@ -26,6 +33,7 @@ const Header = () => {
                 ) : (
                     <></>
                 )}
+        </div>
         <div className='content'>
             <ul className='links'>
                 <Link>About</Link>
@@ -35,7 +43,7 @@ const Header = () => {
                 <Link>Contact</Link>
             </ul>
         </div>
-        <HeaderButton>Login</HeaderButton>
+        <HeaderButton onClick={rotaLogin}>Login</HeaderButton>
     </HeaderNav>
     )
 }
