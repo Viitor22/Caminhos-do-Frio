@@ -6,10 +6,10 @@ export const HeaderNav = styled.div`
     justify-content: space-between;
     padding: 0 96px;
     align-items: center;
+    background-color: ${cores.branco};
 
     .content{
         display: flex;
-        margin-left: 30%;
 
         .links{
             display: flex;
@@ -50,4 +50,45 @@ export const HeaderLogo = styled.div`
     aling-items: center;
     top: 0;
     left: 0;
+`
+export const BarraPesquisa = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+    position: relative;
+    padding: 15px 40px 15px 20px;
+    width: 200px;
+    color: ${cores.preto};
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: 1px solid ${cores.preto};
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    outline: none;
+    
+    &:focus{ 
+        width: 300px; 
+        }
+    }
+
+    i{
+    position: relative;
+    color: ${cores.principal};
+    font-size: 16px;
+    }
+`
+export const SearchButton = styled.a`
+    cursor: pointer;
+    background-color: ${cores.branco};
+    color: ${cores.preto};
+
+    &:hover i{
+        color: ${cores.principal};
+    }
 `

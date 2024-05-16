@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { cores } from "../../style";
 
 export const SectionContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    background-color: #fdefd3;
+    background-color: ${cores.branco};
 
     .text {
         flex: 1;

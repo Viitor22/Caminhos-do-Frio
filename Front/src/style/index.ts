@@ -15,6 +15,7 @@ const GlobalCss = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         font-family: "Raleway", sans-serif;
+        background-color: ${cores.branco};
     }
 `
 
