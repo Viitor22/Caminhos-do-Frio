@@ -1,4 +1,4 @@
-import CardCidade from "../CardCidade/index.tsx"
+import CardCidade from "../CardCidades/index.tsx"
 import areia from '../../assets/areia.jpg'
 import alagoa from '../../assets/alagoa.jpg'
 import bananeiras from '../../assets/bananeiras.jpg'
