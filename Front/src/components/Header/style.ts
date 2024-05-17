@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { cores } from "../../style";
 
 export const HeaderNav = styled.div`
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 0 96px;
