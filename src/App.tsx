@@ -1,14 +1,20 @@
-import GlobalCss from "./style"
-import HeroPrincipal from "./components/HeroPrincipal/index.tsx"
-import SectionBananeiras from "./components/SectionBananeiras/index.tsx"
+import GlobalCss, { Container } from "./style"
+
+import Rotas from "./routes.tsx"
+import { BrowserRouter } from "react-router-dom"
+import Header from "./containers/Header/index.tsx"
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
       <GlobalCss></GlobalCss>
-      <HeroPrincipal></HeroPrincipal>
-      <SectionBananeiras></SectionBananeiras>
+      <Header></Header>
+      <Container>
+        <Rotas></Rotas>
+      </Container>
+    </BrowserRouter>
     </>
   )
 }
