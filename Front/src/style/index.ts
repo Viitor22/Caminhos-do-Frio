@@ -15,7 +15,11 @@ const GlobalCss = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         font-family: "Raleway", sans-serif;
-        background-color: ${cores.branco};
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
     }
 `
 
@@ -30,18 +34,40 @@ export const Texto = styled.p`
     text-decoration: none;
     margin-bottom: 20px;
 `
-export const Links = styled.a`
-    font-size: 22px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    cursor: pointer;
+export const Link = styled.a`
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    text-decoration: none;
+    color: ${cores.preto};
+    
+    &:hover{
+        cursor: pointer;
+        color: ${cores.principal};
+    }
 `
 export const TextoCidade = styled.p`
     font-weight: 700;
     font-style: italic;
     color: rgb(130, 71, 49);
     text-decoration: none;
+`
+export const Container = styled.div`
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+`
+export const Button = styled.a`
+    border: 1px solid ${cores.principal};
+    display: block;
+    padding: 8px 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    font-weight: 700;
+    color: ${cores.principal};
+    transition: all ease .3s;
 `
 
 export default GlobalCss

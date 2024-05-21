@@ -1,11 +1,11 @@
-import SectionBananeiras from "../../components/SectionBananeiras/index.tsx"
-import SectionMapa from "../..//components/SectionMapa/index.tsx"
-import Header from "../..//components/Header/index.tsx"
+import SectionBananeiras from "../../containers/SectionBananeiras/index.tsx"
+import SectionMapa from "../../containers/SectionMapa/index.tsx"
+import HeroPrincipal from "../../containers/HeroPrincipal/index.tsx"
 
 const Home = () => {
     return (
         <>
-        <Header></Header>
+        <HeroPrincipal></HeroPrincipal>
         <SectionBananeiras></SectionBananeiras>
         <SectionMapa></SectionMapa>
         </>

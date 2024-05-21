@@ -1,16 +1,20 @@
-import GlobalCss from "./style"
+import GlobalCss, { Container } from "./style"
 
 import Rotas from "./routes.tsx"
 import { BrowserRouter } from "react-router-dom"
+import Header from "./containers/Header/index.tsx"
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
       <GlobalCss></GlobalCss>
-      <BrowserRouter>
+      <Header></Header>
+      <Container>
         <Rotas></Rotas>
-      </BrowserRouter>
+      </Container>
+    </BrowserRouter>
     </>
   )
 }

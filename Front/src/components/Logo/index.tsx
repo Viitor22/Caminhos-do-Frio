@@ -1,4 +1,4 @@
-import {LogoDiv} from './index.ts';
+import {LogoDiv} from './styles.ts';
 import logo from '../../assets/logo.jpg'
 
 
