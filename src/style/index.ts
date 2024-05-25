@@ -57,5 +57,17 @@ export const Container = styled.div`
     width: 100%;
     margin: 0 auto;
 `
+export const Button = styled.a`
+    border: 1px solid ${cores.principal};
+    display: block;
+    padding: 8px 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 10px;
+    font-weight: 700;
+    color: ${cores.principal};
+    transition: all ease .3s;
+`
 
 export default GlobalCss

@@ -8,7 +8,7 @@ const Rotas = () => (
     <Routes>
         <Route path= '/' element= {<Home></Home>}></Route>
         <Route path= '/login' element= {<Login></Login>}></Route>
-        <Route path= '/cidades/:nome' element= {<TemplateCidade nome={""} foto={""} texto={""}></TemplateCidade>}></Route>
+        <Route path= '/cidades/:nome' element= {<TemplateCidade></TemplateCidade>}></Route>
     </Routes>
 )
 

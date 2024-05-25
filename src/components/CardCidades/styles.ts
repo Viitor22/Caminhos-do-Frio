@@ -83,7 +83,7 @@ export const ModalContent = styled.div`
     z-index: 1;   
     max-width: 1024px;
     padding: 8px;
-    background-color: ${cores.principal};
+    background-color: ${cores.branco};
     position: relative;
 
     header{
@@ -91,6 +91,7 @@ export const ModalContent = styled.div`
         justify-content: flex-end;
 
         img{
+            z-index: 1;
             cursor: pointer;
         }
     }

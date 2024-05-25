@@ -10,49 +10,60 @@ import Logo from "../../components/Logo/index.tsx"
 export type Cidade = {
     nome: string
     foto: string
+    descricao: string
     texto?: string
 }
 
 const cidades: Cidade[] = [
     {
         nome: 'Areia',
-        foto: areia
+        foto: areia,
+        descricao: ''
     },
     {
         nome: 'Bananeiras',
-        foto: bananeiras
+        foto: bananeiras,
+        descricao: ''
     },
     {
         nome: 'Solânea',
-        foto: solanea
+        foto: solanea,
+        descricao: ''
     },
     {
         nome: 'Matinhas',
-        foto: matinhas
+        foto: matinhas,
+        descricao: ''
     },
     {
         nome: 'Alagoa Nova',
-        foto: alagoa
+        foto: alagoa,
+        descricao: ''
     },
     {
         nome: 'Pilões',
-        foto: matinhas
+        foto: matinhas,
+        descricao: ''
     },
     {
         nome: 'Serraria',
-        foto: matinhas
+        foto: matinhas,
+        descricao: ''
     },
     {
         nome: 'Borborema',
-        foto: matinhas
+        foto: matinhas,
+        descricao: ''
     },
     {
         nome: 'Remígio',
-        foto: matinhas
+        foto: matinhas,
+        descricao: ''
     },
     {
         nome: 'Alagoa Grande',
-        foto: matinhas
+        foto: matinhas,
+        descricao: ''
     },
 ]
 
@@ -63,7 +74,7 @@ const SectionMapa = () => {
             <Logo></Logo>
         </div>
         <SectionContainer>
-            {cidades.map((city) => (<CardCidade key={city.nome} nomeCidade={city.nome} fotoCidade={city.foto}></CardCidade>))}
+            {cidades.map((city) => (<CardCidade key={city.nome} nomeCidade={city.nome} fotoCidade={city.foto} descricaoCidade={city.descricao}></CardCidade>))}
         </SectionContainer>
         </> 
     );

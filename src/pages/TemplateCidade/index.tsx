@@ -1,28 +1,12 @@
-import { TextoCidade } from '../../style/index.ts'
-import { TemplateContainer, TituloCidade } from './styles.ts';
+import Aside from "../../components/Aside/index.tsx";
+import CardTurismo from "../../components/CardTurismo/index.tsx";
 
-type Props = {
-    nome: string,
-    foto: string,
-    texto: string
-}
 
-const TemplateCidade = ({nome, foto, texto}: Props) => {
+const TemplateCidade = () => {
     return (
         <>
-        <TemplateContainer>
-            <div className="title">
-                <TituloCidade>{nome}</TituloCidade>
-            </div>
-            <div className="text">
-                <TextoCidade>
-                    {texto}
-                </TextoCidade>
-            </div>
-            <div className="images">
-                <img src={foto} alt="" />
-            </div>
-        </TemplateContainer>
+            <Aside></Aside>
+            <CardTurismo></CardTurismo>
         </> 
     );
 }
