@@ -8,9 +8,10 @@ import { useNavigate } from "react-router-dom"
 type Props = {
     nomeCidade: string
     fotoCidade: string
+    descricaoCidade: string
 }
 
-const CardCidade = ({nomeCidade,fotoCidade}: Props) => {
+const CardCidade = ({nomeCidade,fotoCidade, descricaoCidade}: Props) => {
     const [ModalActive, setModalActive] = useState(false);
     const navigate = useNavigate();
 
@@ -39,7 +40,7 @@ const CardCidade = ({nomeCidade,fotoCidade}: Props) => {
                     <img src={fotoCidade} alt="" />
                     <div className="text-content">
                         <S.SubTitle>{nomeCidade}</S.SubTitle>
-                        <TextoCidade>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita debitis perspiciatis maiores sit nostrum. Possimus repudiandae, in sapiente rerum quod nihil numquam dolor explicabo? Ad nihil id fugiat soluta? Provident!</TextoCidade>
+                        <TextoCidade>{descricaoCidade}</TextoCidade>
                         <Button onClick={rotaCidade}>Visitar site</Button>
                     </div>
                 </S.ModalContentContainer>
