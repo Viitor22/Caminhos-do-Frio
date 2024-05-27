@@ -1,5 +1,5 @@
-import { Button, Texto } from "../../style"
-import { CardTurismoMain, SpanSeparator, TituloCard } from "./styles"
+import { Button, Texto, cores } from "../../style"
+import { CardTurismoMain, SpanSeparator, TextoCard, TituloCard } from "./styles"
 
 const CardTurismo = () => {
 
@@ -14,13 +14,16 @@ const CardTurismo = () => {
         </Texto>
         <div className="contato">
             <div>
-                <h2>Contato</h2>
+                <TextoCard>Contato</TextoCard>
+                <Texto>(83) 99912-9313</Texto>
             </div>
             <div>
-                <h2>Redes Sociais</h2>
+                <TextoCard>Redes Sociais</TextoCard>
+                <i style={{color: cores.principal}} className='bx bxl-instagram-alt'></i>
             </div>
             <div>
-                <h2>Endereço</h2>
+                <TextoCard>Endereço</TextoCard>
+                <Texto>R. Pedro Américo, 94 - Areia, PB</Texto>
             </div>
         </div>
         <Button>Como chegar</Button>

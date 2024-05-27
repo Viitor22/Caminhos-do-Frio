@@ -68,6 +68,8 @@ export const Button = styled.a`
     font-weight: 700;
     color: ${cores.principal};
     transition: all ease .3s;
+    cursor: pointer;
+    text-decoration: none;
 `
 
 export default GlobalCss

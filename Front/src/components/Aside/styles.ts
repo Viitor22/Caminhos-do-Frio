@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import { cores } from "../../style";
 
-export const AsideContainer = styled.aside`
+export const AsideContainer = styled.div`
     display: block;
     background-color: ${cores.principal};
     width: 200px;
-    margin-top: 12px;
     overflow: hidden;
     transition:all .5s;
 
