@@ -4,15 +4,17 @@ import { cores } from "../../style"
 export const CardDiv = styled.div`
     border: 1px solid ${cores.principal};
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .card-content{
         padding: 8px;
     }
 
     img{
-        max-width: 480px;
         width: 100%;
-        max-height: 220px;
+        height: 220px;
         object-fit: fill;
     }
 
@@ -70,16 +72,17 @@ export const Modal = styled.div`
         display: flex;
     }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.5);
-    }
-`
-export const ModalContent = styled.div`
+    `
+    export const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    `
+
+    export const ModalContent = styled.div`
     z-index: 1;   
     max-width: 1024px;
     padding: 8px;

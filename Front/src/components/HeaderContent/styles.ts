@@ -1,14 +1,6 @@
 import styled from "styled-components"
 import { cores } from "../../style"
 
-export const HeaderLogo = styled.div`
-    position: relative;
-    justify-content: center;
-    aling-items: center;
-    top: 0;
-    left: 0;
-`
-
 export const Arrow = styled.div`
     display: none;
     border-left: 10px solid transparent;
@@ -24,7 +16,7 @@ export const Dropdown = styled.div`
     position: absolute;
     top: 60%;
     right: -80%;
-    background-color: ${cores.branco};
+    background-color: #fff;
     width: 200px;
     border-radius: 4px;
     box-shadow: 0 0 40px -10px ${cores.preto};

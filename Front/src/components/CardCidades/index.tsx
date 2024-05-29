@@ -22,12 +22,16 @@ const CardCidade = ({nomeCidade,fotoCidade, descricaoCidade}: Props) => {
     return (
         <>
         <S.CardDiv>
-            <img src={fotoCidade}/>
+            <div>
+                <img src={fotoCidade}/>
+                <div className='card-content'>
+                    <S.CardTitle>
+                    <S.SubTitle>{nomeCidade}</S.SubTitle>
+                    </S.CardTitle>
+                    <TextoCidade className='card-text'>{descricaoCidade}</TextoCidade>
+                </div>
+            </div>
             <div className='card-content'>
-                <S.CardTitle>
-                <S.SubTitle>{nomeCidade}</S.SubTitle>
-                </S.CardTitle>
-                <TextoCidade className='card-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus temporibus, consequuntur harum voluptas eveniet accusamus id repellat consequatur dicta error recusandae doloremque voluptatum dignissimos nulla quibusdam. Sit aliquid nesciunt deserunt.</TextoCidade>
                 <Button onClick={() => (setModalActive(true))}>Saiba Mais</Button>
             </div>
         </S.CardDiv>
@@ -45,8 +49,7 @@ const CardCidade = ({nomeCidade,fotoCidade, descricaoCidade}: Props) => {
                     </div>
                 </S.ModalContentContainer>
             </S.ModalContent>
-            <div className='overlay'>
-            </div>
+            <S.Overlay onClick={() => setModalActive(false)}></S.Overlay>
         </S.Modal>
         </>
 )

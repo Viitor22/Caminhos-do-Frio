@@ -1,16 +1,21 @@
 import { Link } from "../../style"
-import { Arrow, Dropdown, HeaderLogo } from "./styles"
-import logo from '../../assets/logo.jpg'
+import { Arrow, Dropdown } from "./styles"
+import { useNavigate } from "react-router-dom";
+import Logo from "../Logo";
 
 const HeaderContent = () => {
+    const navigate = useNavigate();
+
+    const rotaHome = () => {
+        navigate('/')
+    }
+
     return(
         <div className='content'>
             <ul className="links">
-                <Link>Home</Link>
-                <Link>Sobre</Link>
-                <HeaderLogo>
-                    <img src={logo} alt="Caminhos do Frio Logo" />
-                </HeaderLogo>
+                <Link onClick={rotaHome}>Home</Link>
+                <Link href="#sobre">Sobre</Link>
+                <Logo></Logo>
                 <div className="hover">
                     <Link>Cidades</Link>
                     <Arrow className="dropdown-content"></Arrow>

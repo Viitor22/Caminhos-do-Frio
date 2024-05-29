@@ -7,7 +7,7 @@ const SectionBananeiras = () => {
 
     return (
         <>
-            <SectionContainer>
+            <SectionContainer id="sobre">
                 <div className="text">
                     <Texto> Entre as montanhas e vales do Agreste paraibano, o
                         Caminhos do Frio desponta como um convite irresistível à
