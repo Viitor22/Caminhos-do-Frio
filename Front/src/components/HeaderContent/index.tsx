@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
+
 import { Link } from "../../style"
 import { Arrow, Dropdown } from "./styles"
-import { useNavigate } from "react-router-dom";
+import { cidades } from "../../models/cidade";
+
 import Logo from "../Logo";
 
 const HeaderContent = () => {
@@ -21,17 +24,8 @@ const HeaderContent = () => {
                     <Arrow className="dropdown-content"></Arrow>
                     <Dropdown className="dropdown-content">
                         <ul>
-                            <li>Areia</li>
-                            <li>Alagoa Grande</li>
-                            <li>Alagoa Nova</li>
-                            <li>Bananeiras</li>
-                            <li>Borborema</li>
-                            <li>Matinhas</li>
-                            <li>Pilões</li>
-                            <li>Remígio</li>
-                            <li>Serraria</li>
-                            <li>Solânea</li>
-                            </ul>
+                            {cidades.map((city) => (<li onClick={() => (navigate(`/cidades/${city.nome}`))} key={city.nome}>{city.nome}</li>))}
+                        </ul>
                     </Dropdown>
                 </div>
                 

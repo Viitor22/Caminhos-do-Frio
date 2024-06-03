@@ -121,4 +121,12 @@ export const ModalContentContainer = styled.div`
             border: none;
             padding: 6px;
         }
+
+        img{
+            width: 80px;
+            height: 80px;
+            margin-left: 65%;
+            object-fit: cover;
+        }
+    }
 `

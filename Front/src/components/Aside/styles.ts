@@ -29,5 +29,23 @@ export const AsideContainer = styled.div`
         transition:all .5s;
         cursor: pointer;
     }
+
+    input{
+        display: none;
+    }
+
+    i {
+        display: flex;
+        position: relative;
+    }
+
+    input:nth-child(1):checked ~ li:nth-child(1){
+        background: ${cores.preto};
+        transform: scale(1.05);
+        color: ${cores.principal};
+        box-shadow: 0 0 30px -10px ${cores.preto};
+        transition:all .5s;
+        cursor: pointer;
+    }
 }
 `

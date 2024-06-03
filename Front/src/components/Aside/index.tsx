@@ -1,9 +1,12 @@
 import { AsideContainer } from "./styles"
+import { useParams } from "react-router-dom"
 
 const Aside = () => {
+    const {nome} = useParams();
+
     return(
         <AsideContainer>
-            <h2>Descubra Areia</h2>
+            <h2>Descubra {nome}</h2>
             <div className="content">
                         <ul>
                             <li>Artesanato</li>
@@ -14,7 +17,7 @@ const Aside = () => {
                             <li>Onde se hospedar</li>
                             <li>Pontos Turísticos</li>
                             <li>Calendário de Eventos</li>
-                            </ul>
+                        </ul>
             </div>
         </AsideContainer>
     )

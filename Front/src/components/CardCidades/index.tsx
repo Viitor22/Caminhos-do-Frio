@@ -3,6 +3,7 @@ import { TextoCidade } from "../../style/index.ts"
 import * as S from "./styles.ts"
 import { Button } from "./styles.ts"
 import close from '../../assets/close 1.png'
+import qrcode from '../../assets/download.png'
 import { useNavigate } from "react-router-dom"
 
 type Props = {
@@ -46,6 +47,7 @@ const CardCidade = ({nomeCidade,fotoCidade, descricaoCidade}: Props) => {
                         <S.SubTitle>{nomeCidade}</S.SubTitle>
                         <TextoCidade>{descricaoCidade}</TextoCidade>
                         <Button onClick={rotaCidade}>Visitar site</Button>
+                        <img src={qrcode} alt="" />
                     </div>
                 </S.ModalContentContainer>
             </S.ModalContent>
