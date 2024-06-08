@@ -10,25 +10,33 @@ export const LoginContainer = styled.div`
     align-items: center;
 `
 export const Wrapper = styled.div`  
-    width: 350px;
+    width: 450px;
     text-align: center;
     border: 1px solid #f7eeda;
     border-radius: 12px;
-    padding: 10px 20px;
-    background: transparent;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(6px);
     box-shadow: 5px 5px 10px 0 #ca9738;
 
     h2 {
-    font-size: 30px;
-    color: #0a0300;
-    margin-bottom: 16px;
+        font-size: 30px;
+        color: #f0cf9b;
     }
 
-    a.forgot,
-    a.sign-up {
-    color: rgb(3, 3, 3);
-    text-decoration: none;
+    form {
+        padding-top: 50px;
+        a{
+        text-decoration: none;
+        }
+
+        p {
+            color: #f0cf9b;
+        }
+
+        .sign-up {
+            color: #ffffff;
+        }
     }
 `
 
@@ -36,14 +44,15 @@ export const Input = styled.div`
     position: relative;
     margin-bottom: 20px;
 
-    input[type="email"], input[type="senha"] {
-    border-radius: 10px;
-    background: transparent;
-    border: 2px solid #f0cf9b;
-    width: 100%; 
-    height: 40px; 
-    padding: 0 20px;
-    box-sizing: border-box;
+    input, select {
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #f0cf9b;
+        width: 100%;
+        height: 40px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        color: #ffffff;
     }
 
     i {
@@ -54,12 +63,17 @@ export const Input = styled.div`
     color: #f0cf9b;
 }
 
-    input::placeholder {
-    color: rgb(9, 9, 9);
+    input::placeholder,
+        select {
+        color: #ffffff;
+    }
+
+        select option {
+        color: #000000;
     }
 
     input[type="email"]:focus::placeholder,
-    input[type="senha"]:focus::placeholder {
+    input[type="senha"]:focus::placeholder,{
     transform: translateY(-100%);
     transition: transform 0.2s ease-in-out;
     }

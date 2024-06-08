@@ -8,6 +8,10 @@ export const CardTurismoMain = styled.div`
         display: grid;
         grid-template-columns: 1.2fr 1fr;
     }
+
+    i:hover {
+        cursor: pointer;
+    }
 `
 
 export const TituloCard = styled.h1`

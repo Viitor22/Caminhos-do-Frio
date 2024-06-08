@@ -1,12 +1,16 @@
 import { Wrapper, Input, LoginButton, LoginContainer } from "./styles"
 import background from '../../assets/CENTRO-AREIA-PB-scaled.jpg'
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 
 const Login = () => {
     const navigate = useNavigate();
+    const [cidade, setCidade] = useState('');
+
+    
     const rotaAdm = () => {
-        navigate('/admin')
+        navigate(`/admin/${cidade}`)
     }
 
     return (
@@ -26,6 +30,20 @@ const Login = () => {
                         required
                     />
                     <i className="bx bxs-lock-alt"></i>
+                </Input>
+                <Input className="input-field">
+                    <select onChange={e => setCidade(e.target.value)} id="opcoes" required>
+                        <option value="" disabled selected>Cidade</option>
+                        <option value="Areia">Areia</option>
+                        <option value="Bananeiras">Bananeiras</option>
+                        <option value="Solânea">Solânea</option>
+                        <option value="Matinhas">Matinhas</option>
+                        <option value="Alagoa Nova">Alagoa Nova</option>
+                        <option value="Pilões">Pilões</option>
+                        <option value="Serraria">Serraria</option>
+                        <option value="Borborema">Borborema</option>
+                        <option value="Remígio">Remígio</option>
+                    </select>
                 </Input>
                 <a href="#" className="forgot">
                     <p>Esqueceu sua senha?</p>

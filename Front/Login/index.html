@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Bem-Vindo</h2>
+        <form action="#">
+            <div class="input-field">
+                <input type="email" id="email" placeholder="E-mail" required />
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-field">
+                <input type="password" id="senha" placeholder="Senha" required />
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="input-field">
+                <select id="opcoes" required>
+                    <option value="" disabled selected>Cidade</option>
+                    <option value="opcao1">Areia</option>
+                    <option value="opcao2">Bananeiras</option>
+                    <option value="opcao3">Solânea</option>
+                    <option value="opcao3">Matinhas</option>
+                    <option value="opcao3">Alagoa Nova</option>
+                    <option value="opcao3">Pilões</option>
+                    <option value="opcao3">Serraria</option>
+                    <option value="opcao3">Borborema</option>
+                    <option value="opcao3">Remígio</option>
+                    <option value="opcao3">Alagoa Grande</option>
+                </select>
+            </div>
+            <a href="#" class="forgot">
+                <p class="forgot-text">Esqueceu sua senha?</p>
+            </a>
+            <button type="submit" class="login">Login</button>
+            <p class="no-account"> Não tem uma conta? <a href="#" class="sign-up">Inscrever-se</a></p>
+        </form>
+    </div>
+</body>
+</html>

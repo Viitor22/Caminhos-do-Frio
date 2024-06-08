@@ -24,7 +24,7 @@ export const BarraPesquisa = styled.div`
     border: 1px solid ${cores.preto};
     border-radius: 5px;
     background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
-    transition: width 0.4s ease
+    transition: 0.4s ease;
     outline: none;
     
     &:focus{ 

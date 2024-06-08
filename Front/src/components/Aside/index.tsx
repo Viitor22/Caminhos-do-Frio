@@ -1,25 +1,33 @@
-import { AsideContainer } from "./styles"
+import { useState } from "react";
+import { AsideContainer, BtnCollapse, MenuItem, Wrapper } from "./styles"
 import { useParams } from "react-router-dom"
+import { useSelector } from "react-redux";
+import { RootReducer } from "../../store";
 
 const Aside = () => {
-    const {nome} = useParams();
+    const { itens } = useSelector((state: RootReducer) => state.turismo)
+    const { nome } = useParams();
+    const [menuAberto, setMenuAberto] = useState(false)
 
-    return(
-        <AsideContainer>
-            <h2>Descubra {nome}</h2>
-            <div className="content">
-                        <ul>
-                            <li>Artesanato</li>
-                            <li>Onde comer</li>
-                            <li>Engenhos</li>
-                            <li>Food Park</li>
-                            <li>Guia de Turismo</li>
-                            <li>Onde se hospedar</li>
-                            <li>Pontos Turísticos</li>
-                            <li>Calendário de Eventos</li>
-                        </ul>
-            </div>
-        </AsideContainer>
+
+
+    return (
+        <Wrapper>
+            <BtnCollapse onClick={() => (setMenuAberto(!menuAberto))} style={{ transform: menuAberto ? '' : 'rotate(180deg)', left: menuAberto ? '-10px' : '235px' }}>
+                <i className="bx bx-chevron-right"></i>
+            </BtnCollapse>
+            <AsideContainer className={menuAberto ? 'is-open' : ''}>
+                <div className="header">
+                    <h5>Descubra {nome}</h5>
+                </div>
+                <div className="content">
+                    <ul>
+                        <span> Atrações </span>
+                        {itens.map((t) => (<MenuItem value={t.id}><i className='bx bxs-building-house'></i>{t.nome}</MenuItem>))}
+                    </ul>
+                </div>
+            </AsideContainer>
+        </Wrapper>
     )
 }
 
