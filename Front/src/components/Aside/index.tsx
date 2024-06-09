@@ -9,7 +9,17 @@ const Aside = () => {
     const { nome } = useParams();
     const [menuAberto, setMenuAberto] = useState(false)
 
+    const filtro = () => {
+        let tarefasFiltradas = itens;
+        if (itens !== undefined) {
+            tarefasFiltradas = tarefasFiltradas.filter(t => t.nome.toLowerCase())
+            return tarefasFiltradas
+        } else {
+            return itens
+        }
+    }
 
+    const turismo = filtro()
 
     return (
         <Wrapper>
@@ -23,7 +33,7 @@ const Aside = () => {
                 <div className="content">
                     <ul>
                         <span> Atrações </span>
-                        {itens.map((t) => (<MenuItem value={t.id}><i className='bx bxs-building-house'></i>{t.nome}</MenuItem>))}
+                        {turismo.map((t) => (<MenuItem value={t.id}><i className='bx bxs-building-house'></i>{t.nome}</MenuItem>))}
                     </ul>
                 </div>
             </AsideContainer>
