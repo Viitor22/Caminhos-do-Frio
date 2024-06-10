@@ -1,0 +1,6 @@
+[submodule "Back1"]
+	path = Back1
+	url = https://github.com/nobregas/caminhos-do-frio-back-exemple
+[submodule "Back"]
+	path = Back
+	url = https://github.com/nobregas/caminhos-do-frio-back-exemple
