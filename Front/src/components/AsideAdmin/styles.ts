@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { cores } from "../../style";
 
 export const Wrapper = styled.div`
-  .is-open{
+    .is-open{
       width: 0px;
       transition: 0.4s ease;
   }
@@ -82,7 +82,7 @@ export const MenuItem = styled.li`
   transition: all 0.5s ease;
   text-decoration: none;
   align-items: center;
-  height: 50px;
+  height: 45px;
 
   &:hover{
     background: ${cores.preto};

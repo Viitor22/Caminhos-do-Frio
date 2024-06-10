@@ -90,7 +90,7 @@ const turismoSlice = createSlice({
                 }
                 state.itens.push(atracaoNova)
             }
-        }
+        },
     }
 })
 

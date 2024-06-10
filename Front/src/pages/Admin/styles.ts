@@ -7,4 +7,10 @@ export const CidadeContainer = styled.div`
     margin-top: 80px;
     display: grid;
     grid-template-columns: 0.3fr 1.5fr 1fr;
+
+    img{
+        max-width: 400px;
+        height: 100%;
+    }
 `
+

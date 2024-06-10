@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { tipos } from "../../models/opcoesTuristicas";
 import { useState } from "react";
 
-const Aside = () => {
+const AsideAdmin = () => {
     const { nome } = useParams();
     const [menuAberto, setMenuAberto] = useState(false)
 
@@ -21,10 +21,18 @@ const Aside = () => {
                         <span> Atrações </span>
                         {tipos.map((t) => (<MenuItem key={t.id}><i className='bx bxs-building-house'></i>{t.nome}</MenuItem>))}
                     </ul>
+                    <ul>
+                        <span> Gerenciar </span>
+                        <MenuItem ><i className='bx bxs-building-house'></i>Adicionar categoria</MenuItem>
+                        <MenuItem ><i className='bx bxs-building-house'></i>Remover categoria</MenuItem>
+                        <MenuItem ><i className='bx bxs-building-house'></i>Adicionar atração</MenuItem>
+                        <MenuItem ><i className='bx bxs-building-house'></i>Remover atração</MenuItem>
+                        <MenuItem ><i className='bx bxs-building-house'></i>Editar atração</MenuItem>
+                    </ul>
                 </div>
             </AsideContainer>
         </Wrapper>
     )
 }
 
-export default Aside
+export default AsideAdmin
