@@ -2,10 +2,6 @@ import { useState } from 'react'
 import close from '../../assets/close 1.png'
 import * as S from "./styles"
 
-type Props = {
-    tipo: string,
-    modalActive: boolean
-}
 
 const ModalAdm = () => {
     const [ModalActive, setModalActive] = useState(false)
