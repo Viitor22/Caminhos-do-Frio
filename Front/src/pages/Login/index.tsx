@@ -24,7 +24,7 @@ const Login = () => {
                 </Input>
                 <Input className="input-field">
                     <input
-                        type="senha"
+                        type="password"
                         id="senha"
                         placeholder="Senha"
                         required
@@ -33,7 +33,7 @@ const Login = () => {
                 </Input>
                 <Input className="input-field">
                     <select onChange={e => setCidade(e.target.value)} id="opcoes" required>
-                        <option value="" disabled selected>Cidade</option>
+                        <option disabled selected>Cidade</option>
                         <option value="Areia">Areia</option>
                         <option value="Bananeiras">Bananeiras</option>
                         <option value="Solânea">Solânea</option>
