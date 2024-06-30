@@ -84,6 +84,10 @@ export const MenuItem = styled.li`
   align-items: center;
   height: 45px;
 
+    i {
+    margin-right: 12px;
+  }
+
   &:hover{
     background: ${cores.preto};
     transform: scale(1.05);
@@ -101,6 +105,7 @@ export const MenuItem = styled.li`
       transition: transform 0.3s;
       border-right: 2px solid currentcolor;
       border-bottom: 2px solid currentcolor;
+      margin-left: 12px;
       width: 5px;
       height: 5px;
       transform: rotate(-45deg);
@@ -124,4 +129,165 @@ export const MenuItem = styled.li`
       }
     }
 }
+`
+
+export const Modal = styled.div`
+    z-index: 1;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &.visible{
+        display: flex;
+    }
+
+    `
+    export const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    `
+
+    export const ModalContent = styled.div`
+    z-index: 1;   
+    max-width: 1024px;
+    padding: 8px;
+    background-color: ${cores.branco};
+    position: relative;
+
+    header{
+        display: flex;
+        justify-content: flex-end;
+
+        img{
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+`
+export const ModalContentContainer = styled.div`
+    padding: 0px 16px 16px 16px;
+    display: flex;
+
+    img{
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .text-content{
+        margin-left: 22px;
+
+        p{
+            margin: 20px 0px;
+        }
+
+        button {
+            max-width: 225px;
+            border: none;
+            padding: 6px;
+        }
+
+        img{
+            width: 80px;
+            height: 80px;
+            margin-left: 65%;
+            object-fit: cover;
+        }
+    }
+`
+export const WrapperModal = styled.div`  
+    width: 450px;
+    text-align: center;
+    border: 1px solid #f7eeda;
+    border-radius: 12px;
+    padding: 20px;
+    background: ${cores.principal};
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 #ca9738;
+
+    h2 {
+        font-size: 30px;
+        color: #f0cf9b;
+    }
+
+    form {
+        padding-top: 50px;
+        a{
+        text-decoration: none;
+        }
+
+        p {
+            color: #f0cf9b;
+        }
+
+        .sign-up {
+            color: #ffffff;
+        }
+    }
+`
+
+export const Input = styled.div`
+    position: relative;
+    margin-bottom: 20px;
+
+    input, select {
+        border-radius: 10px;
+        background: transparent;
+        border: 2px solid #f0cf9b;
+        width: 100%;
+        height: 40px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        color: #ffffff;
+    }
+
+    i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #f0cf9b;
+}
+
+    input::placeholder,
+        select {
+        color: #ffffff;
+    }
+
+        select option {
+        color: #000000;
+    }
+
+    input[type="email"]:focus::placeholder,
+    input[type="senha"]:focus::placeholder,{
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+    }
+
+    input[type="email"]:not(:focus)::placeholder,
+    input[type="senha"]:not(:focus)::placeholder {
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    font-size: 16px;
+    }
+`
+export const LoginButton = styled.button`
+    background: #f0cf9b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 40px;
+    margin: 16px 0 16px 0;
 `

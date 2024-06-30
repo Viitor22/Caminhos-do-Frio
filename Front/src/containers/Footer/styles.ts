@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Texto, cores } from "../../style/index.ts";
+import { Texto, breakpoints, cores } from "../../style/index.ts";
 
 export const FooterContainer = styled.div`
     justify-content: center;
@@ -10,11 +10,20 @@ export const FooterContainer = styled.div`
     justify-content: space-between;
     background-color: ${cores.branco};
 
+    @media (max-width: ${breakpoints.tablet}){
+        display: flex;
+        justify-content: center;
+    }
+
     .redes {
         display: flex;
         justify-content: flex-end;
         font-size: 32px;
         width: 250px;
+
+        @media (max-width: ${breakpoints.tablet}){
+            justify-content: center;
+        }
     }
 
     .texto {

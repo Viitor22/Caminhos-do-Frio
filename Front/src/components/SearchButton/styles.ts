@@ -1,8 +1,12 @@
 import styled from "styled-components"
-import { cores } from "../../style"
+import { breakpoints, cores } from "../../style"
 
 export const SearchButtonContainer = styled.div`
     width: 105px;
+
+    @media (max-width: ${breakpoints.tablet}){
+        display: none;
+    }
 `
 
 export const BarraPesquisa = styled.div`

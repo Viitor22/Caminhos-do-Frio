@@ -8,6 +8,11 @@ export const cores = {
     preto: '#0a0300'
 }
 
+export const breakpoints = {
+    desktop: '1024px',
+    tablet: '768px'
+}
+
 const GlobalCss = createGlobalStyle`
     *{
         margin: 0;
@@ -45,6 +50,10 @@ export const Link = styled.a`
         cursor: pointer;
         color: ${cores.principal};
     }
+
+    @media (max-width: ${breakpoints.tablet}){
+        display: none;
+    }
 `
 export const TextoCidade = styled.p`
     font-weight: 700;
@@ -70,6 +79,10 @@ export const Button = styled.a`
     transition: all ease .3s;
     cursor: pointer;
     text-decoration: none;
+
+    @media (max-width: ${breakpoints.tablet}){
+        padding: 4px 10px;
+    }
 `
 
 export default GlobalCss

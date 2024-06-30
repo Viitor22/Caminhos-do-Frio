@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import remigio from '../../assets/carrossel/remigio1-carrossel.png'
 import areia from '../../assets/carrossel/areia-carrossel.png' 
-import bananeiras from '../../assets/carrossel/bananeiras-carrossel.png' 
+import bananeiras from '../../assets/carrossel/bananeiras1-carrossel.png' 
 import solanea from '../../assets/carrossel/solanea-carrossel.png' 
 import matinhas from '../../assets/carrossel/matinhas-carrossel.png'
 import borborema from '../../assets/carrossel/borborema1-carrossel.png'

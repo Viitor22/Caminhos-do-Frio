@@ -1,6 +1,5 @@
 import { AsideContainer, BtnCollapse, MenuItem, Wrapper } from "./styles"
 import { useParams } from "react-router-dom"
-import { tipos } from "../../models/opcoesTuristicas";
 import { useState } from "react";
 
 const Aside = () => {
@@ -19,7 +18,14 @@ const Aside = () => {
                 <div className="content">
                     <ul>
                         <span> Atrações </span>
-                        {tipos.map((t) => (<MenuItem key={t.id}><i className='bx bxs-building-house'></i>{t.nome}</MenuItem>))}
+                        <MenuItem ><i className='bx bx-chair'></i> Artesanato</MenuItem>
+                        <MenuItem ><i className='bx bxs-bowl-hot'></i> Onde comer</MenuItem>
+                        <MenuItem ><i className='bx bxs-building-house'></i>Engenhos</MenuItem>
+                        <MenuItem ><i className='bx bxs-pizza'></i> Food Park</MenuItem>
+                        <MenuItem ><i className='bx bx-body'></i>Guia de Turismo</MenuItem>
+                        <MenuItem ><i className='bx bxs-hotel'></i>Onde se hospedar</MenuItem>
+                        <MenuItem ><i className='bx bxs-arch'></i>Pontos Turísticos</MenuItem>
+                        <MenuItem ><i className='bx bxs-calendar'></i>Calendário de Eventos</MenuItem>
                     </ul>
                 </div>
             </AsideContainer>

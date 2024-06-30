@@ -1,22 +1,25 @@
 import GlobalCss, { Container } from "./style"
-
-import Rotas from "./routes.tsx"
+import { Provider } from 'react-redux'
+import AllRoutes from "./routes.tsx"
 import { BrowserRouter } from "react-router-dom"
 import Header from "./containers/Header/index.tsx"
 import Footer from "./containers/Footer/index.tsx"
+import store from "./store/index.ts"
 
 function App() {
 
   return (
     <>
-    <BrowserRouter>
-      <GlobalCss></GlobalCss>
-      <Header></Header>
-      <Container>
-        <Rotas></Rotas>
-      </Container>
-      <Footer></Footer>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <GlobalCss></GlobalCss>
+        <Header></Header>
+        <Container>
+          <AllRoutes></AllRoutes>
+        </Container>
+        <Footer></Footer>
+      </BrowserRouter>
+    </Provider>
     </>
   )
 }

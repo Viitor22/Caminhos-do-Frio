@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../style";
+import { breakpoints, cores } from "../../style";
 
 export const HeaderNav = styled.div`
     display: flex;
@@ -8,6 +8,10 @@ export const HeaderNav = styled.div`
     align-items: center;
     background-color: ${cores.branco};
     z-index: 1;
+
+    @media (max-width: ${breakpoints.tablet}){
+        padding: 0 24px;
+    }
 
     .content{
         display: flex;
@@ -28,7 +32,6 @@ export const HeaderNav = styled.div`
                 }
             }
         }
-
     }
 `
 export const HeaderButton = styled.button`

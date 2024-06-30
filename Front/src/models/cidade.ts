@@ -13,7 +13,6 @@ export type Cidade = {
     nome: string
     foto: string
     descricao: string
-    texto?: string
 }
 
 export const cidades: Cidade[] = [

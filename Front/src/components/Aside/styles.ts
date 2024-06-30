@@ -1,20 +1,11 @@
 import styled from "styled-components";
-import { cores } from "../../style";
+import { breakpoints, cores } from "../../style";
 
 export const Wrapper = styled.div`
   .is-open{
       width: 0px;
       transition: 0.4s ease;
   }
-
-  .active{
-      background: ${cores.preto};
-      transform: scale(1.05);
-      color: ${cores.principal};
-      box-shadow: 0 0 30px -10px ${cores.preto};
-      transition: all 0.5s ease;
-      cursor: pointer;
-    }
 `
 
 export const AsideContainer = styled.div`
@@ -41,7 +32,10 @@ export const AsideContainer = styled.div`
         transition: opacity 0.3s;
         opacity: 0.5;
     }
-      
+    
+  @media (max-width: ${breakpoints.tablet}){
+    width: 180px;
+  }
 `
 export const BtnCollapse = styled.a`
     transition: left, right, 0.3s;
@@ -84,6 +78,10 @@ export const MenuItem = styled.li`
   align-items: center;
   height: 50px;
 
+  i {
+    margin-right: 12px;
+  }
+
   &:hover{
     background: ${cores.preto};
     transform: scale(1.05);
@@ -101,6 +99,7 @@ export const MenuItem = styled.li`
       transition: transform 0.3s;
       border-right: 2px solid currentcolor;
       border-bottom: 2px solid currentcolor;
+      margin-left: 12px;
       width: 5px;
       height: 5px;
       transform: rotate(-45deg);
