@@ -4,12 +4,12 @@ import { Link } from "../../style"
 import { Arrow, Dropdown } from "./styles"
 
 import Logo from "../Logo";
-import { useGetCidadesQuery } from "../../services/api";
+//import { useGetCidadesQuery } from "../../services/api";
 import { useSelector } from "react-redux";
 import { RootReducer } from "../../store";
 
 const HeaderContent = () => {
-    const { data } = useGetCidadesQuery()
+    //const { data } = useGetCidadesQuery()
     const {itens} = useSelector((state: RootReducer) => state.cidade)
 
     

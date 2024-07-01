@@ -23,6 +23,7 @@ export const FooterContainer = styled.div`
 
         @media (max-width: ${breakpoints.tablet}){
             justify-content: center;
+            width: 100%;
         }
     }
 
@@ -30,6 +31,11 @@ export const FooterContainer = styled.div`
         max-width: 250px;
         p{
             margin: 0;
+        }
+
+        @media (max-width: ${breakpoints.tablet}){
+            max-width: 1000px;
+            width: 100%;
         }
     }
 `
@@ -39,11 +45,4 @@ export const TextFooter = styled(Texto)`
     margin-top: 60px;
     padding: 0;
     font-size: 10px;
-`
-export const FooterLogo = styled.div`
-    position: relative;
-    justify-content: center;
-    aling-items: center;
-    top: 0;
-    left: 0;
 `
