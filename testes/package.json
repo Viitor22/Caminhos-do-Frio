@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "cypress": "cypress"
+  },
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  }
+}

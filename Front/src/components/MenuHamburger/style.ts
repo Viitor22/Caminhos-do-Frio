@@ -11,6 +11,9 @@ export const ContainerDiv = styled.div`
 
 .mobile-menu-icon {
     display: none;
+    i {
+        font-size: 32px;
+    }
 }
 
 .mobile-menu {
